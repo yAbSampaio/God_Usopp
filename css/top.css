@@ -2,8 +2,9 @@
 
 
 /* ------> ID <---------- */
-
-
+#back{
+    background-color:rgba(255, 192, 203, 0.116) ;
+}
 
 #menu ul {
     display: flex;
@@ -50,15 +51,22 @@
     display: flex;
     height: 250px;
     
+    
 }
 
 .img-left{
+    margin-right: auto;
     background: url(https://pm1.narvii.com/6706/56cad5537f16368e39bb5ec131ffb961138d5ba2_00.jpg);
     background-repeat: repeat-y;
 }
 
 .img-right{
+    margin-left: auto;
     background: url(https://pm1.narvii.com/6706/56cad5537f16368e39bb5ec131ffb961138d5ba2_00.jpg);
     background-repeat: repeat-y;
-    margin-left: auto;
 }
+
+.middle{
+    width: 60%;
+}
+

@@ -1,0 +1,59 @@
+/* -------> TAGS <---------- */
+h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 400%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+li a{
+    text-decoration: none;
+}
+
+/* |>|>|>|>|> ID <|<|<|<|<|*/
+
+#titulo {
+    margin-top: 15%;
+    display: inline-flex;
+    margin-left: 6%;
+    
+}
+
+#describe{
+
+}
+#types{
+
+}
+
+#indice{
+    border:2px solid #dcdcdc;
+    background-color:rgba(255, 192, 203, 0.151) ;
+}
+
+#indice ul{
+    list-style:none;
+    
+}
+#indice ul li a{
+    text-decoration: none;
+    direction: ltr;
+    padding: 0.25em 1em;
+    
+
+}
+
+/* |>|>|>|>|> CLASSES <|<|<|<|<|<| */
+
+
+.ind{
+    display: table;
+    border:2px solid #dcdcdc;
+    
+    
+}
+.ind h2{
+    margin-left: 15%;
+    background-color:rgba(255, 192, 203, 0.144) ;
+}
