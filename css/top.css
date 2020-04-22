@@ -1,5 +1,7 @@
 /* -------> TAGS <---------- */
-
+body {
+    margin: 0;
+  }
 
 /* ------> ID <---------- */
 #back{
@@ -48,8 +50,12 @@
 /* -----> CLASSE <------- */
 
 .img-top{
-    display: flex;
+    background-image: url("../../maxresdefault.png");
+    /* display: flex; */
     height: 250px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     
     
 }
