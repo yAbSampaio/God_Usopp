@@ -7,10 +7,6 @@ h1{
     margin-right: 5%;
 }
 
-li a{
-    text-decoration: none;
-}
-
 /* |>|>|>|>|> ID <|<|<|<|<|*/
 
 #titulo {
@@ -26,10 +22,12 @@ li a{
 #types{
 
 }
+#indti{
+    background-color:rgba(255, 192, 203, 0.151) ;
+}
 
 #indice{
     border:2px solid #dcdcdc;
-    background-color:rgba(255, 192, 203, 0.151) ;
 }
 
 #indice ul{
@@ -50,10 +48,9 @@ li a{
 .ind{
     display: table;
     border:2px solid #dcdcdc;
-    
+    background-color:rgba(255, 192, 203, 0.151) ;
     
 }
 .ind h2{
     margin-left: 15%;
-    background-color:rgba(255, 192, 203, 0.144) ;
 }
