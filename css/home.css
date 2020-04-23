@@ -7,14 +7,4 @@ h1{
     margin-right: 5%;
 }
 /* -----> CLASSE <------- */
-.imgs-top{
-    background-image: url("../maxresdefault.png");
-    /* display: flex; */
-    height: 250px;
-    width: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
-    
-}
 
