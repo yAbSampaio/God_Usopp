@@ -23,13 +23,15 @@ h1{
 #types{
 
 }
-#indti{
-    background-color:rgba(255, 192, 203, 0.151) ;
-}
 
 #indice{
-    border:2px solid #dcdcdc;
+    border:2px solid rgba(0, 0, 0, 0.212);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    
 }
+
 
 #indice ul{
     list-style:none;
@@ -39,8 +41,8 @@ h1{
     text-decoration: none;
     direction: ltr;
     padding: 0.25em 1em;
+    margin-left: -37%;
     
-
 }
 
 /* |>|>|>|>|> CLASSES <|<|<|<|<|<| */
@@ -48,10 +50,12 @@ h1{
 
 .ind{
     display: table;
-    border:2px solid #dcdcdc;
+    border:2px solid rgba(0, 0, 0, 0.418);
     background-color:rgba(255, 192, 203, 0.151) ;
-    
+        
 }
 .ind h2{
     margin-left: 15%;
+    margin-top: auto;
+    margin-bottom: auto;
 }

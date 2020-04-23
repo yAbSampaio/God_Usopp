@@ -62,14 +62,14 @@ body {
 
 .img-left{
     margin-right: auto;
-    background: url(https://pm1.narvii.com/6706/56cad5537f16368e39bb5ec131ffb961138d5ba2_00.jpg);
+    background: url("../wanted.jpg");
     background-repeat: repeat-y;
 
 }
 
 .img-right{
     margin-left: auto;
-    background: url(https://pm1.narvii.com/6706/56cad5537f16368e39bb5ec131ffb961138d5ba2_00.jpg);
+    background: url("../wanted.jpg");
     background-repeat: repeat-y;
 }
 
@@ -77,3 +77,12 @@ body {
     width: 60%;
 }
 
+.img-bottom{
+    background-image: url(https://a-static.besthdwallpaper.com/one-piece-going-merry-wallpaper-3840x1440-8481_92.jpg);
+    /* display: flex; */
+    height: 250px;
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    
+    
+}
