@@ -11,10 +11,20 @@ h1{
 /* |>|>|>|>|> ID <|<|<|<|<|*/
 
 #titulo {
-    margin-top: 15%;
     display: inline-flex;
-    margin-left: 6%;
-    
+    width: 100%;
+}
+#teste{ 
+    margin-top: 15%;
+    margin-right: auto;
+}
+#tes{ 
+    margin-top: 15%;
+    margin-left: auto;
+}
+#testh{ 
+    align-items: center; 
+    margin-top: 25%;
 }
 
 #describe{
