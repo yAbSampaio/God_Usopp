@@ -6,3 +6,7 @@ h1{
     margin-left: 5%;
     margin-right: 5%;
 }
+#back{
+    background-image: url("../../backp.jpg");
+    /* background-color:rgba(255, 192, 203, 0.116) ; */
+}

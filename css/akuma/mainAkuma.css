@@ -7,8 +7,21 @@ h1{
     margin-left: 5%;
     margin-right: 5%;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:link :visited :active :hover {
+    color: black;
+    text-decoration: none;
+}
 
 /* |>|>|>|>|> ID <|<|<|<|<|*/
+#back{
+    background-image: url("../../backd.jpg");
+    /* background-color:rgba(255, 192, 203, 0.116) ; */
+}
 
 #titulo {
     display: inline-flex;
@@ -35,7 +48,7 @@ h1{
 }
 
 #indice{
-    border:2px solid rgba(0, 0, 0, 0.212);
+    border:2px solid rgba(0, 0, 0, 0.356);
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -48,11 +61,11 @@ h1{
     
 }
 #indice ul li a{
-    text-decoration: none;
-    direction: ltr;
-    padding: 0.25em 1em;
-    margin-left: -37%;
+    margin-left: -18%;
     
+}
+#indice ul ul li a {
+    margin-left: -28%;
 }
 
 /* |>|>|>|>|> CLASSES <|<|<|<|<|<| */
@@ -60,8 +73,8 @@ h1{
 
 .ind{
     display: table;
-    border:2px solid rgba(0, 0, 0, 0.418);
-    background-color:rgba(255, 192, 203, 0.151) ;
+    border:2px solid rgba(0, 0, 0, 0.527);
+    background-color:rgba(255, 192, 203, 0.267) ;
         
 }
 .ind h2{

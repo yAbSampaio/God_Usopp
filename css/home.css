@@ -6,5 +6,10 @@ h1{
     margin-left: 5%;
     margin-right: 5%;
 }
+/* |>|>|>|>|>|> ID <||<|<|<|<|<|*/
+#back{
+    background-image: url("../back.jpg");
+    /* background-color:rgba(255, 192, 203, 0.116) ; */
+}
 /* -----> CLASSE <------- */
 
