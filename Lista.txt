@@ -1,0 +1,32 @@
+|>|>|>|>|>|>|>>>>> Lista de Proximos Passos <<<<<|<|<|<|<|<|
+
+
+Paginas
+    - Akuma
+        - Estrutura ✔ 
+        - Texto explicativo 
+        - Pagina Generica do tipo da Akumas no mi em html <|
+            -- Adaptar p/Js c/DB
+        - Links da PageAkuma to PageGenAkumas
+    - Personagens
+        - Estrutura ✔
+        - Pagina Generica de Bandos/Organizações <|
+            -- Adaptar p/Js c/DB
+        - Adaptar p/Js c/DB
+    - Wanted
+        - Estrutura <|
+        - Pegar todos as imagens ✔
+        - Texto explicativo
+        - Breve Descrições
+        - Links da PageWanted to PageBandos
+        - Fazer todas as 20 posições
+        
+    - Noticias
+        - Estrutura <|
+        - Pagina Generica
+        - Pagina Generica da noticia em especifico
+            - Adaptar p/Js c/DB
+        - Adaptar p/Js c/DB
+    - Footer
+        - Estrutura
+        - Colocar Todas infos necessarias
