@@ -1,0 +1,11 @@
+#thumb{
+    width: 400px;
+    height: 400px;
+    margin-left: 25%;    
+}
+
+
+
+#back{
+    background-image: url("../../back.jpg");
+}

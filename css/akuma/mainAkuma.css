@@ -1,18 +1,10 @@
 /* -------> TAGS <---------- */
 
-h1{
-    text-align: center;
-    font-family: monospace;
-    font-size: 400%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 
 
 /* |>|>|>|>|> ID <|<|<|<|<|*/
 #back{
     background-image: url("../../backd.jpg");
-    /* background-color:rgba(255, 192, 203, 0.116) ; */
 }
 
 #titulo {
@@ -32,45 +24,7 @@ h1{
     margin-top: 25%;
 }
 
-#describe{
 
-}
-#types{
-
-}
-
-#indice{
-    border:2px solid rgba(0, 0, 0, 0.356);
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    
-}
-
-
-#indice ul{
-    list-style:none;
-    
-}
-#indice ul li a{
-    margin-left: -18%;
-    
-}
-#indice ul ul li a {
-    margin-left: -28%;
-}
 
 /* |>|>|>|>|> CLASSES <|<|<|<|<|<| */
 
-
-.ind{
-    display: table;
-    border:2px solid rgba(0, 0, 0, 0.527);
-    background-color:rgba(255, 192, 203, 0.267) ;
-        
-}
-.ind h2{
-    margin-left: 15%;
-    margin-top: auto;
-    margin-bottom: auto;
-}

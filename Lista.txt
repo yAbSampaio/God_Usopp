@@ -14,12 +14,12 @@ Paginas
             -- Adaptar p/Js c/DB
         - Adaptar p/Js c/DB
     - Wanted
-        - Estrutura <|
+        - Estrutura ✔
         - Pegar todos as imagens ✔
         - Texto explicativo
         - Breve Descrições
         - Links da PageWanted to PageBandos
-        - Fazer todas as 20 posições
+        - Fazer todas as 20 posições <|
         
     - Noticias
         - Estrutura <|
