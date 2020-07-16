@@ -2,20 +2,31 @@
 
 
 /* |>|>|>|>|> ID <|<|<|<|<|<| */
+#center{
+    text-align: center;
+}
+
+#td{
+    background-size: 100% 100%;
+}
 
 #back{
     background-image: url("../../backp.jpg");
 }
 
-#teste{ 
+#logoE{ 
+    margin-top: 15%;
+    margin-left:-5%;
+    width: 30%;
+    height: 30%;
+}
+#logoD{ 
     margin-top: 15%;
     margin-right: auto;
+    width: 30%;
+    height: 30%;
 }
-#tes{ 
-    margin-top: 15%;
-    margin-left: auto;
-}
-#testh{ 
+#title{ 
     align-items: center; 
     margin-top: 25%;
 }
@@ -28,6 +39,7 @@
 #table{
     background-size: 100% 100%;
     width: 100%;
+    
 }
 
 /* |>|>|>|>|> CLASSES <|<|<|<|<|<| */
