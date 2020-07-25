@@ -15,51 +15,16 @@ a:link :visited :active :hover {
 
 h1{
     text-align: center;
-    font-family: monospace;
+    font-family: "Merienda One";
     font-size: 400%;
     margin-left: 5%;
     margin-right: 5%;
 }
 /* ------> ID <---------- */
-
-#menu ul {
+#head{
     display: flex;
-    padding:0px;
-    margin:0px;
-    background-color:rgba(255, 68, 0, 0.911);
-    list-style:none;
-    align-items: center;
-    justify-content: center;
 }
 
-#menu ul li { 
-    display: flex;
-    margin-left: 2%;
-}
-
-#menu ul li a {
-    padding: 2px 10px;
-
-    /* visual do link */
-    background-color:rgba(255, 68, 0, 0.021);
-    color: black;
-    text-decoration: none;
-    text-align-last: center;
-    border: 4px solid white;
-    border-bottom: none;
-    border-top: none;
-}
-
-#menu ul li a:hover {
-    background-color:whitesmoke;
-    color: black;
-    border-bottom:3px solid #000000;
-
-}
-
-#menu ul audio{
-    margin-left: auto;
-}
 
 #indice{
     border:2px solid rgba(0, 0, 0, 0.356);
@@ -80,7 +45,153 @@ h1{
 #indice ul ul li a {
     margin-left: -28%;
 }
+
+
+#divNav{
+    /* margin-left: auto; */
+    background-size: 100% 100%;
+    
+    width: 20%;
+}
+
+
+#list_li{
+    margin-top: 5%;
+    margin-top: 2%;
+
+}
+#img_person{
+    position: absolute;
+    width: 14%;
+    height: 35%;
+    margin-left: 3%;
+}
+#img_title{
+    position: absolute;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+#aud{
+    margin-left: auto;
+}
+
 /* -----> CLASSE <------- */
+.menu_la{
+    height: 100%;
+}
+
+.menu_la ul{
+    background-size: auto 100%;
+    padding:0px;
+    margin:0px;
+    background-color:rgba(235, 100, 51, 0.911);
+    background-image: linear-gradient(to right, rgba(238, 238, 238, 0.911) , rgba(235, 100, 51, 0.911));
+    list-style:none;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #9ee8ff;
+    border-right: none;
+    border-left: none;
+    height: 97%;
+    border-radius: 4%;
+}
+
+.menu_la ul td{
+    border: 4px solid rgba(238, 238, 238, 0.911);
+    border-bottom: none;
+    border-top: 1px solid rgba(238, 238, 238, 0.911);
+    border-radius: 5%;
+    
+}
+
+.menu_la ul table{
+    width: 100%;
+    height: 100%;
+}
+.menu_la ul li { 
+    display: flex;
+    /* height: 100%; */
+}
+
+.menu_la ul li a {
+    margin-left: auto;
+    margin-right: auto;
+    /* visual do link */
+    color: black;
+    text-decoration: none;
+    text-align-last: center;
+    font-family: "Luckiest Guy"; 
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.menu_la ul td:hover {
+    /* background-color:whitesmoke; */
+    background-color:rgba(235, 100, 51, 0.911);
+    background-image: linear-gradient(to left, rgba(238, 238, 238, 0.767) , rgba(235, 100, 51, 0.795));
+    color: black;
+    border-bottom:3px solid #000000;
+
+
+}
+
+.menu ul {
+    display: flex;
+    padding:0px;
+    margin:0px;
+    background-color:rgba(255, 68, 0, 0.911);
+    list-style:none;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    border-bottom: none;
+    border-top: none;
+    background-image: linear-gradient(to top left, rgba(252, 240, 236, 0.911) , rgba(255, 68, 0, 0.911));
+}
+
+
+
+.menu ul li ul{
+    display: none;
+    position: absolute;
+    /* padding: 0px; */
+    margin-top: 9px;
+}
+
+
+.menu ul li  {
+    padding: 2px 10px;
+    margin-left: 2%;
+    /* visual do link */
+    background-color:rgba(255, 68, 0, 0.021);
+    color: black;
+    text-decoration: none;
+    text-align-last: center;
+    border: 4px solid white;
+    border-bottom: none;
+    border-top: none;
+    box-shadow: none;
+    font-family: "Luckiest Guy"; 
+    font-size: 20px;
+    border-radius: 20%;
+}
+.menu ul li:hover > ul{
+    display: list-item;
+}
+
+.menu ul li:hover {
+    background-color:whitesmoke;
+    color: black;
+    border-bottom:3px solid #000000;
+
+}
+
+
 
 .ind{
     display: table;
@@ -95,26 +206,29 @@ h1{
 }
 
 .img-top{
-    background-image: url("../maxresdefault.png");
+    background-image: url("../imgs/head.png");
     /* display: flex; */
     height: 250px;
-    width: 100%;
+    width: 80%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
     
 }
+.img-top nav{
+    float: right;
+}
 
 .img-left{
     margin-right: auto;
-    background: url("../wanted.jpg");
+    background: url("../imgs/wanted.jpg");
     background-repeat: repeat-y;
 
 }
 
 .img-right{
     margin-left: auto;
-    background: url("../wanted.jpg");
+    background: url("../imgs/wanted.jpg");
     background-repeat: repeat-y;
 }
 

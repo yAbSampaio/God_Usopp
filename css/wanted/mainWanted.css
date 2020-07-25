@@ -1,10 +1,11 @@
 /* -------> TAGS <---------- */
 
 #back{
-    background-image: url("../../back.jpg");
+    background-image: url("../../imgs/back.jpg");
 }
 
 #testh{ 
     align-items: center; 
     margin-top: 15%;
+    
 }

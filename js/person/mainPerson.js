@@ -3,7 +3,6 @@
 function main(){
     // >>>>> Create Var <<<<<<
     var data = info();
-    console.log(data[1][2]["head"])
     var subs = 0;
     var leng = ["kaizu","four","seven"];
     var lengH = ["Rei dos Piratas","Yonkous","Shichibukai"];
@@ -48,7 +47,7 @@ function main(){
                     //  >>>>> Set your config <<<<<<
 
                     aB.setAttribute('href', "bandos.html");
-                    imgB.setAttribute('id', "center");
+                    // imgB.setAttribute('id', "center");
                     imgB.setAttribute('src', data[i][j]['img']);
                     h3B.setAttribute('style',"text-align: center;");
                     h3B.innerHTML = data[i][j]['name'];
@@ -63,6 +62,7 @@ function main(){
                     j++;
                     
                 }
+                j--;
             }
             else{
                     var tdB = document.createElement('td');

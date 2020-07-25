@@ -8,29 +8,55 @@
     <link rel="stylesheet" href="../../css/person/bandos.css">
     <link rel="stylesheet" href="../../css/top.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../usopp.ico" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Luckiest+Guy" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
 </head>
 <body>
     <header>
-        <div class="img-top">
+        <div id="head">
+            <div class="img-top">
+                <a href="../../index.html"><img src="../../imgs/usopp.png" id="img_person">
+                <img src="../../imgs/title.png" id="img_title"></a>
+            </div>
+            <div id="divNav">
+                <nav class="menu_la">
+                    <ul>
+                        <table><tr><td>
+                            <li><a href="../../index.html">Noticias</a></li></td></tr>
+                        <tr><td>
+                            <li><a href="mainPerson.html">Personagens</a></td></tr>
+                        <tr><td>
+                            <li><a href="../akuma/mainAkuma.html">Akumas no Mis</a></li></td></tr>
+                        <tr><td>
+                            <li><a href="../wanted/mainWanted.html">Wanteds</a></li></td></tr>
+                        <tr><td>
+                            <li><a href="#">Formulario</a></li></td></tr></table>
+                        
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="../../index.html">Noticias</a></li>
-                    <li><a href="mainPerson.html">Personagens</a></li>
-                    <li><a href="../akuma/mainAkuma.html">Akumas no Mis</a></li>
-                    <li><a href="../wanted/mainWanted.html">Wanteds</a></li>
-                    <li><a href="#">Formulario</a></li>
-                    <audio  controls>
-                        <source src="../../Tema de Sogeking  One Piece.mp3" type="audio/mpeg">
-                    </audio>
-                </ul>
-            </nav>
-        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../news/news.html">Veja de novo: News</a></li>
+                <li><a href="bandos.html">Veja de novo: Bando</a></li>
+                <li>Lista de musicas
+                    <ul>
+                        <li id="list_li"><a href="#Binks_no_sake">Binks no Sake</a></li>
+                        <li id="list_li"><a href="#We_Go">We Go</a></li>
+                        <li id="list_li"><a href="#We_are">We Are</a></li>
+                        <li id="list_li"><a href="#over">Over the Top</a></li>
+                    </ul>
+                </li>
+                <audio id="aud" controls>
+                    <source src="../../Tema de Sogeking  One Piece.mp3" type="audio/mpeg">
+                </audio>
+            </ul>
+        </nav>
     </header>
     <div style="display: flex" id="back">
         <div class="img-left" >
-            <img src="../../wanted.jpg">
+            <img src="../../imgs/wanted.jpg">
         </div>
 
         <div class="middle">
@@ -75,7 +101,7 @@
         </div>
 
         <div class="img-right" >
-            <img src="../../wanted.jpg" >
+            <img src="../../imgs/wanted.jpg" >
         </div>  
     </div>
 

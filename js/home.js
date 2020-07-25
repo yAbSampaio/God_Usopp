@@ -3,7 +3,7 @@
 function main(){
     // >>>>> Create Var <<<<<<
     var data = info();
-
+    audio(1);
 
     // Start put html
     for (let i = 0; i < data.length; i++) {
@@ -49,3 +49,52 @@ function info(){
     return dataHome;
 }
 
+function audio(cache){
+    var music = inf();
+    console.log(cache);
+    for (let i = 0; i < music.length; i++){
+        if(music[i]['id'] == cache){
+            var sou = document.createElement('source');
+            // var audi = document.createElement('audio');
+
+            // // audi.setAttribute('controls');
+            sou.setAttribute('src',music[i]['src']);
+            sou.setAttribute('type','audio/mpeg')
+            // audi.appendChild(sou);
+            document.getElementById('aud').appendChild(sou);
+        
+        
+        }
+    }
+
+
+}
+
+
+
+function inf(){
+    
+    dataHo = [
+        {
+            id:1,
+            src:"Tema de Sogeking  One Piece.mp3"
+        },
+        {
+            id:2,
+            src: "binks_sake.mp3"
+        },
+        {
+            id:3,
+            src: "wego.mp3"
+        },
+        {
+            id:4,
+            src: "we_are.mp3"
+        },
+        {
+            id:5,
+            src: "over_the_top.mp3"
+        }
+    ]
+    return dataHo;
+}

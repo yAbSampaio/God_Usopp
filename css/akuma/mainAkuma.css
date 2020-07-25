@@ -4,7 +4,7 @@
 
 /* |>|>|>|>|> ID <|<|<|<|<|*/
 #back{
-    background-image: url("../../backd.jpg");
+    background-image: url("../../imgs/backd.jpg");
 }
 
 #titulo {
@@ -15,13 +15,22 @@
     margin-top: 15%;
     margin-right: auto;
 }
-#tes{ 
-    margin-top: 15%;
-    margin-left: auto;
+#logoE{ 
+    margin-top: -5%;
+    margin-left: 80%;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
 }
-#testh{ 
-    align-items: center; 
-    margin-top: 25%;
+#title{ 
+    text-align: center; 
+    margin-top: 15%;
+    margin-left: 4%;
+    font-size: 300%;
+    width: 100%;
+}
+#below{
+    display: inline-flex;
 }
 
 
