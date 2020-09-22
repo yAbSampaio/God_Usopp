@@ -14,7 +14,7 @@ Paginas
             -- Adaptar p/Js c/DB
         - Adaptar p/Js c/DB ✔
     - Wanted
-        - Estrutura ✔
+        - Estrutura ✔ 
         - Pegar todos as imagens ✔
         - Texto explicativo
         - Breve Descrições
@@ -30,3 +30,5 @@ Paginas
     - Footer
         - Estrutura
         - Colocar Todas infos necessarias
+    - Formulario
+    
