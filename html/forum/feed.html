@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Personagens</title>
-    <link rel="stylesheet" href="../../css/person/mainPerson.css">
+    <title>God Usopp</title>
+    <link rel="stylesheet" href="../../css/home.css">
     <link rel="stylesheet" href="../../css/top.css">
-    <script type="text/javascript" src="../../js/person/mainPerson.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="../../usopp.ico" />
+    <script type="text/javascript" src="../../js/forum/feed.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="usopp.ico" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Luckiest+Guy" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
 </head>
@@ -25,13 +25,13 @@
                         <table><tr><td>
                             <li><a href="../../index.html">Noticias</a></li></td></tr>
                         <tr><td>
-                            <li><a href="mainPerson.html">Personagens</a></td></tr>
+                            <li><a href="../person/mainPerson.html">Personagens</a></td></tr>
                         <tr><td>
                             <li><a href="../akuma/mainAkuma.html">Akumas no Mis</a></li></td></tr>
                         <tr><td>
                             <li><a href="../wanted/mainWanted.html">Wanteds</a></li></td></tr>
                         <tr><td>
-                            <li><a href="../forum/mainForum.html">Forum</a></li></td></tr></table>
+                            <li><a href="mainForum.html">Formulario</a></li></td></tr></table>
                         
                     </ul>
                 </nav>
@@ -40,56 +40,33 @@
         <nav class="menu">
             <ul>
                 <li><a href="../news/news.html">Veja de novo: News</a></li>
-                <li><a href="bandos.html">Veja de novo: Bando</a></li>
-                <li><a href="../forum/login.html">Conectar ou Cadastrar</a></li>
+                <li><a href="../person/bandos.html">Veja de novo: Bando</a></li>
+                <li><a href="../login/Login.html">Conectar ou Cadastrar</a></li>
                 <li>Lista de musicas
                     <ul>
-                        <li id="list_li"><a href="#Binks_no_sake">Binks no Sake</a></li>
+                        <li id="list_li"><a onclick="Audio(2)" >Binks no Sake</a></li>
                         <li id="list_li"><a href="#We_Go">We Go</a></li>
                         <li id="list_li"><a href="#We_are">We Are</a></li>
                         <li id="list_li"><a href="#over">Over the Top</a></li>
                     </ul>
                 </li>
-                <audio id="aud" controls>
-                    <source src="../../Tema de Sogeking  One Piece.mp3" type="audio/mpeg">
+                <audio  id="aud" controls>
                 </audio>
             </ul>
         </nav>
     </header>
     <div style="display: flex" id="back">
         <div class="img-left" >
-            <img src="../../imgs/wanted.jpg">
+            <img src="../../imgs/wanted.jpg" >
         </div>
 
-        <div class="middle">
-            <div id="titulo" >
-                <h1 id="title" >
-                    PERSONAGENS
-                </h1>
-            </div>
-            <br><br><br><br><br><br><br><br><br>
-            <div id="below">
-                <div class="ind">
-                    <div >
-                        <h2>
-                            Indice
-                        </h2>
-                    </div>
-                    <div id="indice">
-                        <ul id="autoInd">
-                        
-                        </ul>    
-                    </div>
-                </div>
-                <img id="logoE"  src="https://media.playstation.com/is/image/SCEA/one-piece-pirate-warriors-4-character-02-ps4-us-11july2019?$native_t$" >
-            </div>
-            <br><br><br><br><br><br>
+        <div class="middle" >
+            <br><br><br><br>
+            <h1 id ="titulo"></h1>
             <div id="auto">
-                
+                <p id="feed"> </p>
+                <br><br>
             </div>
-
-
-
         </div>
 
         <div class="img-right" >
