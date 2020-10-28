@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Feeds>
+        <Feed>
+            <id>0</id>
+            <criador>criador 0</criador>
+            <titulo>titulo feed 0</titulo>
+            <texto>texto 0</texto>
+                <comentarios>
+                    <comentario>
+                        <criador>cri coment 0 0 </criador>
+                        <texto>txt coment 0 0</texto>
+                    </comentario>
+                </comentarios>
+        </Feed>
+        <Feed>
+            <id>1</id>
+            <criador>joãozinho</criador>
+            <titulo>titulo feed 1</titulo>
+            <texto>xy</texto>
+                <comentarios>
+                    <comentario>
+                        <criador>joãozinho</criador>
+                        <texto>z</texto>
+                    </comentario>
+                    <comentario>
+                        <criador>mariazinha</criador>
+                        <texto>z</texto>
+                    </comentario>
+                </comentarios>
+        </Feed>
+    </Feeds>

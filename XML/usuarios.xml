@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Usuarios>
+        <Usuario>
+           <nome>admin</nome>
+           <senha>admin</senha>
+           <feeds>
+                <feed>0</feed>
+                <feed>1</feed>
+           </feeds>
+        </Usuario>
+        <Usuario>
+           <nome>x</nome>
+           <senha>x</senha>
+           <feeds>
+                <feed>3</feed>
+                <feed>4</feed>
+           </feeds>
+        </Usuario>
+    </Usuarios>
