@@ -1,6 +1,7 @@
 
 
 function main(){
+
     // >>>>> Create Var <<<<<<
     autoMusic();
     var data = info();
