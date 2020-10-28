@@ -1,0 +1,34 @@
+#thumb{
+    width: 400px;
+    height: 400px;
+    margin-left: 25%;    
+}
+#div_T{
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-width: medium;
+    border-right: none;
+    border-left: none;
+
+}
+#criador{
+    text-align: center;
+    font-size: 150% ;
+}
+#texto{
+    
+    text-align: left;
+    max-width: 800px;
+    font-size: 150% ;
+    
+}
+#comentario{    
+    text-align: left;
+}
+
+
+
+#back{
+    background-image: url("../../imgs/back.jpg");
+}

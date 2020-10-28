@@ -1,0 +1,29 @@
+#thumb{
+    width: 400px;
+    height: 400px;
+    margin-left: 25%;    
+}
+#auto{
+    text-align: center;
+    
+    
+}
+.divfeed{
+    border-color: black;
+    border-style: solid;
+    border-width: medium;
+    border-right: none;
+    border-left: none;
+
+}
+.feed{
+    font-size: 300%;
+    
+    
+}
+
+
+
+#back{
+    background-image: url("../../imgs/back.jpg");
+}

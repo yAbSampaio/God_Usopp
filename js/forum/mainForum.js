@@ -14,18 +14,26 @@ function main(){
     };
     getXMLFile("../../XML/feeds.xml", function(xml){
         autoMusic();
-       var br = document.createElement('br');
+        console.log(xml);
         xmlfeeds = xml.getElementsByTagName("Feed");
+        console.log(xmlfeeds);
         for (let i = 0; i < xmlfeeds.length; i++){
+            
+            var br = document.createElement('br');
             var divFeed= document.createElement('div');
             var feed = document.createElement('a');
             feed.setAttribute("onclick","FeedFunction(" + i + ")");
             feed.setAttribute('href','#');
+            feed.setAttribute('class','feed');
             feed.innerHTML= xmlfeeds[i].getElementsByTagName("titulo")[0].childNodes[0].nodeValue;
             divFeed.appendChild(feed);
+            divFeed.setAttribute('class','divfeed');
+            
             document.getElementById("auto").appendChild(br);
             document.getElementById('auto').appendChild(divFeed);
             document.getElementById("auto").appendChild(br);
+            
+
         }
         
         

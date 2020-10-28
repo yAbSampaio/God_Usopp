@@ -74,8 +74,6 @@ function main(){
             var pArt = document.createElement('p');
             var img = document.createElement('img');
             var pImg = document.createElement('p')
-            // console.log(textos[i]);
-            
             if(imgs.length == 0){
                 pArt.innerHTML = data[id].getElementsByTagName("text")[i].childNodes[0].nodeValue;
                 document.getElementById('auto').appendChild(pArt);

@@ -66,22 +66,26 @@
             <h1>
                 Login
             </h1>
-            <br><br>
-            <div id= "logout" >
-               <p id = "erro"></p>
+            <div>
+                <center>
+                <div id= "logout" >
+                    <p id = "erro"></p>
+                </div>
+                <div id="login" >
+                    <h2>Nome:</h2><input type="text" id=nome>
+                    <h2>Senha:</h2><input type="text" id=senha>
+                    
+                </div>
+                <div id="botoes">
+                    <button id="botao_logar" onclick="Logar()">Login</button>
+                    <button id="botao_cadastrar" onclick="Cadastrar()">Cadastre-se</button>
+                </div>
+                <div id="cadastro">
+                </div>
+                </center>
             </div>
-            <div id="login" >
-               <h2>Nome:</h2><input type="text" id=nome>
-               <h2>Senha:</h2><input type="text" id=senha>
-                <button onclick="Logar()">Login</button>
-                <button onclick="Cadastrar()">cadastre-se</button>
-
-            </div>
-            <div id="cadastro">
-            </div>
-            
+            <br><br><br>
         </div>
-
         <div class="img-right" >
             <img src="../../imgs/wanted.jpg" >
         </div>  

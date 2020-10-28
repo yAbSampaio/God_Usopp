@@ -9,15 +9,10 @@ function autoMusic(){
     if (aud == null){
         aud = 0;
     }
-    // console.log(sessionStorage.getItem('musica'))
     var sou = document.createElement('source');
-    // var audi = document.createElement('audio');
 
-    // audi.setAttribute('controls');
-    // audi.setAttribute('id','aud');
     sou.setAttribute('src',music[aud]['src']);
     sou.setAttribute('type','audio/mpeg')
-    // audi.appendChild(sou);
     document.getElementById('aud').appendChild(sou);
 }
 

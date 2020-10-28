@@ -19,25 +19,33 @@ function main(){
         var br = document.createElement('br');
         Feed = xml.getElementsByTagName("Feed")[id];
 
-        var titulo= document.createElement("h2")
-        titulo.innerHTML=Feed.getElementsByTagName("titulo")[0].childNodes[0].nodeValue;
-
         var criador= document.createElement("h3")
+        criador.setAttribute("id","criador");
         criador.innerHTML=Feed.getElementsByTagName("criador")[0].childNodes[0].nodeValue;
 
         var texto= document.createElement("p")
+        texto.setAttribute("id","texto");
         texto.innerHTML=Feed.getElementsByTagName("texto")[0].childNodes[0].nodeValue;
 
         document.getElementById("titulo").innerHTML= Feed.getElementsByTagName("titulo")[0].childNodes[0].nodeValue;
-        document.getElementById("auto").appendChild(criador);
+        document.getElementById("div_T").appendChild(criador);
         document.getElementById("auto").appendChild(texto);
         document.getElementById("auto").appendChild(br);
-        var comentarios = Feed.getElementsByTagName("comentarios");
+        var hr = document.createElement("hr");
+        var comentario= document.createElement("h3")
+        comentario.innerHTML="Comentarios :";
+
+        document.getElementById("auto").appendChild(hr);
+        document.getElementById("auto").appendChild(comentario);
+
+        var comentarios = Feed.getElementsByTagName("comentario");
 
         for (let i = 0; i < comentarios.length; i++){
 
             var div_comentario= document.createElement('div');
+
             var comentario = document.createElement('p');
+            comentario.setAttribute("id","comentario");
             comentario.innerHTML=comentarios[i].getElementsByTagName("criador")[0].childNodes[0].nodeValue  + ": " + comentarios[i].getElementsByTagName("texto")[0].childNodes[0].nodeValue;
             
             div_comentario.appendChild(comentario);
