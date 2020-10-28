@@ -9,3 +9,23 @@
     margin-top: 15%;
     
 }
+
+#flex{
+    display: inline-flex;
+    width: 100%;
+}
+
+#video{
+    padding-left: 10%;
+    padding-top: 5%;
+}
+#videoAlt{
+    /* padding-top: 15%; */
+    width: 80%;
+    height: 80%;
+}
+
+#diVideo{
+    width: 100%;
+    text-align: center;
+}

@@ -3,13 +3,66 @@
 
 /* |>|>|>|>|> ID <|<|<|<|<|<| */
 
-#back{
+/* #back{
     background-image: url("../../imgs/backp.jpg");
 }
 
 #logo{
     margin-top: 12%;
+} */
+
+/* -------> TAGS <---------- */
+
+
+/* |>|>|>|>|> ID <|<|<|<|<|<| */
+#center{
+    text-align: center;
 }
+
+#td{
+    background-size: 100% 100%;
+}
+
+#back{
+    background-image: url("../../imgs/backp.jpg");
+}
+
+#logoE{ 
+    margin-top: -10%;
+    margin-left:auto;
+    margin-right:auto;
+    width: 30%;
+    height: 30%;
+}
+/* #logoD{ 
+    margin-top: 15%;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+} */
+#title{ 
+    text-align: center; 
+    margin-top: 15%;
+    margin-left: 4%;
+    font-size: 300%;
+    width: 100%;
+}
+#titulo {
+    display: inline-flex;
+    width: 100%;
+}
+
+#table{
+    background-size: 100% 100%;
+    width: 100%;
+    
+}
+
+#below{
+    display: inline-flex;
+}
+
+/* |>|>|>|>|> CLASSES <|<|<|<|<|<| */
 
 
 /* |>|>|>|>|> CLASSES <|<|<|<|<|<| */

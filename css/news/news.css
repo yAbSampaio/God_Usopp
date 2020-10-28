@@ -9,3 +9,46 @@
 #back{
     background-image: url("../../imgs/back.jpg");
 }
+
+#title{
+    /* background-image: linear-gradient(to right, #9C9C9C, #B5B5B5); */
+    /* opacity: 0.5; */
+    display: inline-flex;    
+    border-color: black;
+    border-style: solid;
+    border-width: medium;
+    border-right: none;
+    border-left: none;
+
+}
+#titleD{
+    padding: 0% 2%;
+}
+
+#time{
+    margin-bottom: 0;
+    margin-right: 0%;
+    
+}
+
+#h1t{
+    font-size: 200%;
+    margin-left: 0%;
+}
+
+#h3t{
+    margin-top: 0%;
+}
+
+#span{
+    width: 100%;
+    display: inline-flex;
+}
+
+#full{
+    width: 82%;
+}
+
+#center{
+    text-align: center;
+}

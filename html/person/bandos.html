@@ -7,11 +7,13 @@
     <title>Personagens</title>
     <link rel="stylesheet" href="../../css/person/bandos.css">
     <link rel="stylesheet" href="../../css/top.css">
+    <script type="text/javascript" src="../../js/person/bando.js"></script>
+    <script type="text/javascript" src="../../js/top.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../../usopp.ico" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Luckiest+Guy" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
 </head>
-<body>
+<body onload="main()">
     <header>
         <div id="head">
             <div class="img-top">
@@ -38,18 +40,18 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="../news/news.html">Veja de novo: News</a></li>
-                <li><a href="bandos.html">Veja de novo: Bando</a></li>
+                <li><a href="html/news/news.html">Veja de novo: News</a></li>
+                <li><a href="html/person/bandos.html">Veja de novo: Bando</a></li>
                 <li>Lista de musicas
                     <ul>
-                        <li id="list_li"><a href="#Binks_no_sake">Binks no Sake</a></li>
-                        <li id="list_li"><a href="#We_Go">We Go</a></li>
-                        <li id="list_li"><a href="#We_are">We Are</a></li>
-                        <li id="list_li"><a href="#over">Over the Top</a></li>
+                        <li id="list_li"><a onclick="musicas(0,'bandos.html')"> Sogeking</a></li>
+                        <li id="list_li"><a onclick="musicas(1,'bandos.html')"> Binks no Sake</a></li>
+                        <li id="list_li"><a onclick="musicas(2,'bandos.html')"> We Go </a></li>
+                        <li id="list_li"><a onclick="musicas(3,'bandos.html')"> We Are</a></li>
+                        <li id="list_li"><a onclick="musicas(4,'bandos.html')"> Over the Top</a></li>
                     </ul>
                 </li>
-                <audio id="aud" controls>
-                    <source src="../../Tema de Sogeking  One Piece.mp3" type="audio/mpeg">
+                <audio  id="aud" controls>
                 </audio>
             </ul>
         </nav>
@@ -60,11 +62,11 @@
         </div>
 
         <div class="middle">
-            <div align="center" >
-                <img id="logo"  src="../../imgs/jolly/kaido.jpg" >
-                <h1 id="tit" >
-                    PIRATAS DAS FERAS
-                </h1>
+            <div id="tit" >
+                <!-- <img id="logo"  src="https://vignette.wikia.nocookie.net/onepiece/images/f/f6/Beasts_Pirates%27_Jolly_Roger.png/revision/latest/scale-to-width-down/350?cb=20181210173915&path-prefix=pt" > -->
+                <!-- <h1 id="tit" >
+                    
+                </h1> -->
             </div>
             <br><br><br><br><br>
             <div class="ind">
@@ -74,27 +76,36 @@
                     </h2>
                 </div>
                 <div id="indice">
-                    <ul >
-                        <li><a href="#his">Historia</a></li>
+                    <ul id="autoInd">
+                        <!-- <li><a href="#his">Historia</a></li>
+                        <li><a href="#subcom">Hierarquia</a></li>
+                        <li><a href="#subcom">Curiosidade</a></li>
                         <li><a href="#boss">Líder</a></li>
                         <li><a href="#comand">Comandantes</a></li>
-                        <li><a href="#subcom">Cargos Altos</a></li>
-                        <li><a href="#sub">Subordinados</a></li>
+                        <li><a href="#sub">Subordinados</a></li> -->
                     </ul>    
                 </div>
             </div>
             <br><br>
-            <div>
-                <h2 id="his">Historia<br></h2>
-                <p>Composto com um grande numero de usuarios de zoans e smiles,
-                    os piratas das feras que hoje se estabelecem no pais de wano,
-                    se auto consideram a maior força de batalha do mundo.
+            <div id="auto">
+                <!-- <h2 id="his">Historia<br></h2>
+                <p>Os Piratas das Feras são uma tripulação de piratas extremamente infame e poderosa liderada por Kaido das Cem Feras um dos Yonkous. 
+                    Eles estão sediados no país de Wano, especificamente com a sede na ilha de Onigashima.
+                    Nas últimas duas décadas, a tripulação consolidou seu poder em Wano, que ocupou por meio de uma aliança com o shogun do país, Kurozumi Orochi. 
+                    Recentemente, os Beasts Pirates entraram em uma nova aliança com os Big Mom Pirates,
+                    outra tripulação do Imperador, para planos de conquistar o mundo; Esses planos, de acordo com o "Novo Projeto Onigashima" de Kaido,
+                    eventualmente viram Orochi ser considerado desnecessário e traiçoeiramente assassinado por Kaido durante o último Festival do Fogo.
+                    Devido às suas ações e funções, eles são os principais antagonistas do Arco Zou e do Arco do País Wano, e um dos grupos antagonistas centrais da Saga dos Quatro Imperadores.
+                    
                 <br></p>
                 <h2 id="boss">Lider<br></h2>
                 <p><h3>Kaidou das Feras</h3>
-                    O lider dos piratas das feras é o Kaidou das feras (cem feras), outrora pertecente ao bando dos rocks
-                    kaido é conhecido como a critatura mais forte do mundo
-                </p>
+                    Kaido das Feras, conhecido como a "Criatura Mais Forte", é o Governador-Geral dos Piratas das Feras e um dos Yonkous que governam o Novo Mundo. Ele também é o pai de Yamato.
+                    Décadas atrás, antes da formação de sua própria tripulação, 
+                    Kaido era um aprendiz dos lendários Piratas Rocks e atualmente está em uma aliança com seu ex-companheiro de tripulação do Rocks e também Yonkou, Big Mom.
+                    Kaido foi referido pela primeira vez por Monkey D. Garp no Arco do Lobby Pós-Enies e depois diretamente mencionado por Gecko Moria no Arco Thriller Bark, 
+                    Kaido é o terceiro Yonkou mencionado pelo nome e o último a estrear. Antes de sua estreia pessoal, sua voz foi ouvida em um flashback que Kozuki Momonosuke teve quando desembarcou pela primeira vez em Dressrosa.
+                </p> -->
             </div>
 
 

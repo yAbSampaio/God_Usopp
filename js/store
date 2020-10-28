@@ -1,0 +1,258 @@
+----------------------------------------
+
+
+function main(){
+
+
+    
+    // >>>>> Create Var <<<<<<
+    var data = info();
+    var dataBoss = infoBoss();
+    var dataCom  = infoComan();
+    var dataSub = infoSub();
+    var idB = 2;
+    var iBand = 0;
+    var jBand = 0;
+    var cont = 0;
+    var leng = ['his','coriosi','boss','comand','sub'];
+    var lengH = ["Historia","Curiosidade","Líder","Comandantes","Subordinados"];
+    var BossLen = ["Historia","Curiosidade","Poderes"];
+    var auxBoss = ['imgBoss','nameB', 'bossHis','curosi','power'];
+    var auxComand = ['amou','imgsComand','nameComand','hisComand','curComand','powComand'];
+    //var auxGrup = ['amou','imgGrup','subGrup','curGrup0','flag'];
+    var auxSubs = ['amouGrup','imgsPerson','namePerson','hisPerson','curPerson','powPerson'];
+
+    for (let x = 0; x < lengH.length; x++) {
+        var aInd = document.createElement('a');
+        var liInd = document.createElement('li');
+        aInd.setAttribute('href', "#"+leng[x]);
+        aInd.innerHTML = lengH[x];
+        liInd.appendChild(aInd);
+        document.getElementById('autoInd').appendChild(liInd);
+    }
+
+    for (let i = 0; i < data.length; i++) {
+        for (let j = 0; j < data[i].length; j++) {
+            if (idB == data[i][j]['id']){
+                console.log(data[i][j]['id'])
+                iBand = i;
+                jBand = j;
+            }
+            
+        }
+        
+    }
+
+    var divTitle = document.createElement('div');
+    var h1Title = document.createElement('h1');
+    var imgT = document.createElement('img');
+    var pT = document.createElement('p');
+
+    h1Title.setAttribute('style',"text-align: center;");
+    h1Title.innerHTML = data[iBand][jBand]['name'];
+    imgT.setAttribute('src', data[iBand][jBand]['img']);
+    pT.setAttribute('id', 'center');
+    
+    pT.appendChild(imgT);
+    divTitle.appendChild(pT);
+    divTitle.appendChild(h1Title);
+    document.getElementById('tit').appendChild(divTitle);
+    
+    for (let cont = 0; cont < lengH.length; cont++) {
+        if (cont == 2) {
+            var h2Title = document.createElement('h2');
+            var br = document.createElement('br');
+            var pB = document.createElement('p');
+            var h3Name = document.createElement('h2');
+            var imgB = document.createElement('img');
+            var hr = document.createElement('hr');
+
+            h2Title.setAttribute('id',leng[cont]);
+            h2Title.innerHTML = lengH[cont]; //Ver como fazer loop
+            
+            imgB.setAttribute('src', dataBoss[iBand][jBand]['imgBoss']);
+            pB.setAttribute('id', 'center');
+            pB.appendChild(imgB);
+            //pB.innerHTML = data[iBand][jBand][leng[cont]];
+            h3Name.setAttribute('style',"text-align: center;");
+            h3Name.innerHTML = data[iBand][jBand][leng[cont]];
+
+            //h3Subs.setAttribute();
+
+            document.getElementById('auto').appendChild(h2Title);
+            document.getElementById('auto').appendChild(pB);
+            document.getElementById('auto').appendChild(h3Name);
+            document.getElementById('auto').appendChild(hr)
+            for (let index = 0; index < BossLen.length; index++) {
+                var h3Subs = document.createElement('h3');
+                var pSubs = document.createElement('p');
+                h3Subs.setAttribute('style',"text-align: center;");
+                h3Subs.innerHTML = BossLen[index];
+                pSubs.innerHTML = dataBoss[iBand][jBand][auxBoss[index+2]];
+                document.getElementById('auto').appendChild(h3Subs);
+                document.getElementById('auto').appendChild(pSubs);
+
+            }
+            
+            document.getElementById('auto').appendChild(br);
+
+
+
+
+        }
+        
+        else if (cont == 3) {
+            var h2Title = document.createElement('h2');
+            var br = document.createElement('br');
+            //var pB = document.createElement('p');
+            var h3Name = document.createElement('h2');
+            //var imgB = document.createElement('img');
+
+            h2Title.setAttribute('id',leng[cont]);
+            h2Title.innerHTML = lengH[cont]; //Ver como fazer loop
+            
+            //imgB.setAttribute('src', dataBoss[iBand][jBand]['imgBoss']);
+            //pB.setAttribute('id', 'center');
+            //pB.appendChild(imgB);
+            //pB.innerHTML = data[iBand][jBand][leng[cont]];
+            h3Name.setAttribute('style',"text-align: center;");
+            h3Name.innerHTML = data[iBand][jBand][leng[cont]];
+
+            //h3Subs.setAttribute();
+
+            document.getElementById('auto').appendChild(h2Title);
+            //document.getElementById('auto').appendChild(pB);
+            document.getElementById('auto').appendChild(h3Name);
+            for (let z = 0; z < dataCom[iBand][jBand]['amou'];  z++) {
+                var h3Nam = document.createElement('h3');
+                var imgComan = document.createElement('img');
+                var pB = document.createElement('p');
+                var hr = document.createElement('hr');
+
+                h3Nam.innerHTML = dataCom[iBand][jBand]['nameComand'+String(z)];
+                imgComan.setAttribute('src', dataCom[iBand][jBand]['imgsComand'+String(z)]);
+                pB.setAttribute('id', 'center');
+                pB.appendChild(imgComan);
+
+                document.getElementById('auto').appendChild(pB);
+                document.getElementById('auto').appendChild(h3Nam);
+                document.getElementById('auto').appendChild(hr)
+
+                for (let index = 0; index < BossLen.length; index++) {
+                    var h4Subs = document.createElement('h4');
+                    var pSubs = document.createElement('p');
+                    //h4Subs.setAttribute('style',"text-align: center;");
+                    h4Subs.innerHTML = BossLen[index];
+                    var aux = auxComand[index+3]+String(z);
+                    pSubs.innerHTML = dataCom[iBand][jBand][aux];
+                    document.getElementById('auto').appendChild(h4Subs);
+                    document.getElementById('auto').appendChild(pSubs);
+    
+                }
+                document.getElementById('auto').appendChild(br);
+                
+            }
+            
+            document.getElementById('auto').appendChild(br);
+        }
+
+        else if (cont == 4) {
+            var h2Title = document.createElement('h2');
+            var br = document.createElement('br');
+            //var h3Name = document.createElement('h3');
+            var pIni = document.createElement('p');
+            var h3subti = document.createElement('h2');
+
+            h2Title.setAttribute('id',leng[cont]);
+            h2Title.innerHTML = lengH[cont]; //Ver como fazer loop
+            
+            pIni.innerHTML = data[iBand][jBand][leng[cont]];
+            //h3Name.setAttribute('style',"text-align: center;");
+            h3subti.innerHTML = 'Sub-Grupos';
+            
+            document.getElementById('auto').appendChild(h2Title);
+            document.getElementById('auto').appendChild(pIni);
+            document.getElementById('auto').appendChild(h3subti);
+            for (let w = 0; w < dataSub[iBand][jBand]['amou'];  w++) {
+                var h3Nam = document.createElement('h3');
+                var imgSub = document.createElement('img');
+                var pB = document.createElement('p');
+                var pSu = document.createElement('p');
+                var hr = document.createElement('hr');
+                var h4Men = document.createElement('h4');
+
+                h3Nam.innerHTML = dataSub[iBand][jBand]['subGrup'+String(w)];
+                imgSub.setAttribute('src', dataSub[iBand][jBand]['imgGrup'+String(w)]);
+                pB.setAttribute('id', 'center');
+                pB.appendChild(imgSub);
+                pSu.innerHTML = dataSub[iBand][jBand]['curGrup'+String(w)];
+                h4Men.innerHTML = 'Membros';
+
+                document.getElementById('auto').appendChild(pB);
+                document.getElementById('auto').appendChild(h3Nam);
+                document.getElementById('auto').appendChild(hr);
+                document.getElementById('auto').appendChild(pSu);
+                if (dataSub[iBand][jBand]['amouGrup'+String(w)] != 0) {
+                    document.getElementById('auto').appendChild(h4Men);
+                }
+
+                for (let indx = 0; indx < dataSub[iBand][jBand]['amouGrup'+String(w)]; indx++) {
+                    var h3subM = document.createElement('h3');
+                    var imgMem = document.createElement('img');
+                    var p = document.createElement('p');
+                    var phis = document.createElement('p');
+                    var pSuMe = document.createElement('p');
+                    var pSuPod = document.createElement('p');
+                    var hr = document.createElement('hr');
+                    var h4sub = document.createElement('h4');
+                    var h4cur = document.createElement('h4');
+                    var h4po = document.createElement('h4');
+                    
+                    //h4Subs.setAttribute('style',"text-align: center;");
+                    h3subM.innerHTML = dataSub[iBand][jBand]['namePerson'+String(w)+String(indx)];
+                    imgMem.setAttribute('src', dataSub[iBand][jBand]['imgsPerson'+String(w)+String(indx)]);
+                    p.setAttribute('id', 'center');
+                    p.appendChild(imgMem);
+                    
+                    
+                    h4sub.innerHTML = 'Historia';
+                    document.getElementById('auto').appendChild(p);
+                    document.getElementById('auto').appendChild(h3subM);
+                    document.getElementById('auto').appendChild(hr);
+                    phis.innerHTML = dataSub[iBand][jBand]['hisPerson'+String(w)+String(indx)];
+                    document.getElementById('auto').appendChild(h4sub);
+                    document.getElementById('auto').appendChild(phis);
+                    h4cur.innerHTML = 'Curiosidades';
+                    pSuMe.innerHTML = dataSub[iBand][jBand]['curPerson'+String(w)+String(indx)];
+                    document.getElementById('auto').appendChild(h4cur);
+                    document.getElementById('auto').appendChild(pSuMe);
+                    h4po.innerHTML = 'Poderes';
+                    pSuPod.innerHTML = dataSub[iBand][jBand]['powPerson'+String(w)+String(indx)];
+                    document.getElementById('auto').appendChild(h4po);
+                    document.getElementById('auto').appendChild(pSuPod);
+
+    
+                }
+                document.getElementById('auto').appendChild(br);
+                
+            }
+            
+            document.getElementById('auto').appendChild(br);
+        }
+
+        else{
+            var h2Title = document.createElement('h2');
+            var br = document.createElement('br');
+            var pB = document.createElement('p');
+        
+            h2Title.setAttribute('id',leng[cont]);
+            h2Title.innerHTML = lengH[cont]; //Ver como fazer loop
+            pB.innerHTML = data[iBand][jBand][leng[cont]];
+            document.getElementById('auto').appendChild(h2Title);
+            document.getElementById('auto').appendChild(pB);
+            document.getElementById('auto').appendChild(br);
+        }
+
+    }
+
+}

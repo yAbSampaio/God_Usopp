@@ -2,10 +2,11 @@
 
 function main(){
     // >>>>> Create Var <<<<<<
+    autoMusic();
     var data = info();
     var subs = 0;
     var leng = ["kaizu","four","seven"];
-    var lengH = ["Rei dos Piratas","Yonkous","Shichibukai"];
+    var lengH = ["Rei dos Piratas","Yonkous","Governo Mundial"];
     
 
     // Start put html
@@ -46,7 +47,7 @@ function main(){
                     var pB = document.createElement('p');
                     //  >>>>> Set your config <<<<<<
 
-                    aB.setAttribute('href', "bandos.html");
+                    aB.setAttribute('onclick','passIDB('+data[i][j]['id']+')');
                     // imgB.setAttribute('id', "center");
                     imgB.setAttribute('src', data[i][j]['img']);
                     h3B.setAttribute('style',"text-align: center;");
@@ -73,7 +74,7 @@ function main(){
                     
                     //  >>>>> Set your config <<<<<<
 
-                    aB.setAttribute('href', "bandos.html");
+                    aB.setAttribute('onclick','passIDB('+data[i][j]['id']+')');
                     imgB.setAttribute('src',data[i][j]['img']);
                     h3B.setAttribute('style',"text-align: center;");
                     h3B.innerHTML = data[i][j]['name'];
@@ -85,7 +86,7 @@ function main(){
                     aB.appendChild(pB);
                     aB.appendChild(h3B);
                     tdB.appendChild(aB);
-                    trB.appendChild(tdB)
+                    trB.appendChild(tdB);
             }
         
             tableBandos.appendChild(trB);
@@ -93,12 +94,16 @@ function main(){
         }
         
         // Create
-        document.getElementById('auto').appendChild(h2Title)
-        document.getElementById('auto').appendChild(br)
-        document.getElementById('auto').appendChild(br)
-        document.getElementById('auto').appendChild(tableBandos)
-        document.getElementById('autoInd').appendChild(liInd)
+        document.getElementById('auto').appendChild(h2Title);
+        document.getElementById('auto').appendChild(br);
+        document.getElementById('auto').appendChild(br);
+        document.getElementById('auto').appendChild(tableBandos);
+        document.getElementById('autoInd').appendChild(liInd);
     }
+}
+function passIDB(i){
+    sessionStorage.setItem('idb',i);
+    window.location.href = 'bandos.html';
 }
 
 function info(){
@@ -108,7 +113,7 @@ function info(){
             {
                 id:0,
                 head :"Rei dos Piratas" ,
-                img:"../../imgs/jolly/barba.png",
+                img:"https://cdn.discordapp.com/attachments/704786714769490101/770360047217410068/unknown.png",
                 name:"Piratas do Roger"
             },
         ],
@@ -147,9 +152,9 @@ function info(){
         [          
             {
                 id:6,
-                head : "Shichibukais",
-                img:"../../imgs/jolly/shanks.jpg",
-                name:"Piratas do Buggy"
+                head : "Governo Mundial",
+                img:"https://cdn.discordapp.com/attachments/704786714769490101/770695608843239444/unknown.png",
+                name:"Marinha"
             }
         ]
 
